@@ -1,24 +1,5 @@
-# README
+# MapThat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MapThat is the exercice-project from the MellonMellon.com formation I wrote.
+This project is the exemple for the students. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
