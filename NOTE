@@ -1,0 +1,30 @@
+
+3 - Rails generate
+
+rails g scaffold User email:string login:string
+rails g scaffold Map name:string user:references
+rails g scaffold Place name:string user:references map:references
+
+
+
+
+5 - Console
+
+User.create(email: "foo@test.fr", login: "foo")
+User.create(email: "bar@test.fr", login: "bar")
+
+Map.create(user: User.first, name: "Foo Map")
+Map.create(user: User.first, name: "Foo Map 2")
+Map.create(user: User.last, name: "Bar Map")
+
+Place.create(map: )
+
+6 - Gem
+
+Devise : 
+  changement de la migration des users -> conflit sur le champs email
+  Rajout d'un namespace aux routes de devise pour eviter les colisions avec les routes du controller user
+
+ActAsTaggableOn :
+  les migrations auto-générés n'ont pas la version de rails (5.X) et donc j'ai eu une erreur. il faut les rajouter à la main.
+  une erreur aussi dans la création d'un index déjà existant car rails 5 créé automatiquement les index sur les foreign keys

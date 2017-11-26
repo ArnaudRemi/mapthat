@@ -17,6 +17,16 @@
   </div>
 
   <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password, id: :user_password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation, id: :user_password_confirmation %>
+  </div>
+
+  <div class="field">
     <%= form.label :login %>
     <%= form.text_field :login, id: :user_login %>
   </div>

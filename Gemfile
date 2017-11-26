@@ -34,6 +34,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem "figaro"
+gem "devise"
+gem "cancancan", '~> 2.0'
+gem 'rails_admin', '~> 1.2'
+gem 'acts-as-taggable-on', '~> 4.0'
+# combine rails_admin and acts-as-taggable-on
+gem 'rails_admin_tag_list'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
